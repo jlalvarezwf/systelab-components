@@ -20,6 +20,6 @@ export class ShowcaseAddRemoveListComponent {
 		this.dataList.push(new ShowcaseAddRemoveListData(3, 'Elemento 3'));
 		this.dataList.push(new ShowcaseAddRemoveListData(4, 'Elemento 4'));
 		this.dataList.push(new ShowcaseAddRemoveListData(5, 'Elemento 5'));
-		this.dataList.push(new ShowcaseAddRemoveListData(5, 'Elemento 5'));
+		this.dataList.push(new ShowcaseAddRemoveListData(5, 'Elemento 6'));
 	}
 }

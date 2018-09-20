@@ -11,51 +11,51 @@
             </div>
             <div class="row">
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('1')">1</a>
+                    <a id="numpadKey1Button" class="btn slab-numpad-btn form-control" (click)="pushButton('1')">1</a>
                 </div>
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('2')">2</a>
+                    <a id="numpadKey2Button" class="btn slab-numpad-btn form-control" (click)="pushButton('2')">2</a>
                 </div>
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('3')">3</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('4')">4</a>
-                </div>
-                <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('5')">5</a>
-                </div>
-                <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('6')">6</a>
+                    <a id="numpadKey3Button" class="btn slab-numpad-btn form-control" (click)="pushButton('3')">3</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('7')">7</a>
+                    <a id="numpadKey4Button" class="btn slab-numpad-btn form-control" (click)="pushButton('4')">4</a>
                 </div>
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('8')">8</a>
+                    <a id="numpadKey5Button" class="btn slab-numpad-btn form-control" (click)="pushButton('5')">5</a>
                 </div>
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('9')">9</a>
+                    <a id="numpadKey6Button" class="btn slab-numpad-btn form-control" (click)="pushButton('6')">6</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="cleanInput()">C</a>
+                    <a id="numpadKey7Button" class="btn slab-numpad-btn form-control" (click)="pushButton('7')">7</a>
                 </div>
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="pushButton('0')">0</a>
+                    <a id="numpadKey8Button" class="btn slab-numpad-btn form-control" (click)="pushButton('8')">8</a>
                 </div>
                 <div class="col-md-4 slab-numpad-nopadding">
-                    <a class="btn slab-numpad-btn form-control" (click)="deleteNumber()"><</a>
+                    <a id="numpadKey9Button" class="btn slab-numpad-btn form-control" (click)="pushButton('9')">9</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 slab-numpad-nopadding">
+                    <a id="numpadKeyCButton" class="btn slab-numpad-btn form-control" (click)="cleanInput()">C</a>
+                </div>
+                <div class="col-md-4 slab-numpad-nopadding">
+                    <a id="numpadKey0Button" class="btn slab-numpad-btn form-control" (click)="pushButton('0')">0</a>
+                </div>
+                <div class="col-md-4 slab-numpad-nopadding">
+                    <a id="numpadKeyDelButton" class="btn slab-numpad-btn form-control" (click)="deleteNumber()"><</a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12 slab-numpad-nopadding">
-                    <button class="btn slab-numpad-btn form-control" (keypress)="doKeyPress($event)" (click)="accept()">{{ 'COMMON_OK' | translate | async }}</button>
+                    <button id="numpadKeyOKButton" class="btn slab-numpad-btn form-control" (keypress)="doKeyPress($event)" (click)="accept()">{{ 'COMMON_OK' | translate | async }}</button>
                 </div>
             </div>
         </div>
