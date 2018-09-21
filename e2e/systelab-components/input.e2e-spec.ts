@@ -1,6 +1,5 @@
 import { ShowcasePage } from '../app.po';
 import { protractor } from 'protractor/built/ptor';
-import { sample } from 'rxjs/operators';
 import { browser } from 'protractor';
 
 describe('systelab-components: Input Component Testing', () => {
@@ -18,13 +17,8 @@ describe('systelab-components: Input Component Testing', () => {
         });
     });
     it('Check input component: Full Width', async() => {
-        await page.getFullWidthInput().isPresent().then((iPresent) => {
-            if (iPresent === true) {
-                expect(page.getFullWidthInput().isDisplayed()).toBe(true);
-            } else {
-                fail('input-full-width not present');
-            }
-        });        
+        await expect(page.getFullWidthInput().isPresent()).toBe(true);
+        await expect(page.getFullWidthInput().isDisplayed()).toBe(true);
     }); 
     it('Check input component: Number Input', async() => {
         expect(page.getNumberInput().isPresent()).toBe(true);
@@ -64,10 +58,6 @@ describe('systelab-components: Input Component Testing', () => {
         await expect(page.getNumberInput().getAttribute('value')).toEqual('-3.4');
         await expect(page.getNumberInput().getAttribute('valueAsNumber')).toEqual('-3.4');
 
-        await page.getNumberInput().clear();
-        await page.getNumberInput().sendKeys('+c23a,b7d%€');
-        await expect(page.getNumberInput().getAttribute('value')).toEqual('23.7');
-        await expect(page.getNumberInput().getAttribute('valueAsNumber')).toEqual('23.7');
     });
     it('Check input component: Third Width', async () => {
         await expect(page.getThirdWidthInput().isPresent()).toBe(true);

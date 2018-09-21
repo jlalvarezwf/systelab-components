@@ -1,5 +1,5 @@
 import { ShowcasePage } from '../app.po';
-import { browser, protractor, promise } from 'protractor';
+import { protractor } from 'protractor';
 
 describe('systelab-components: Numpad Testing', () => {
     let page: ShowcasePage = new ShowcasePage();
